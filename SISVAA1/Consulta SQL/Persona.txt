@@ -1,0 +1,44 @@
+use sisvaa;
+
+CREATE table persona (
+    tipo_documento varchar(5) NOT null,
+    idDocumento int(15) NOT null PRIMARY KEY,
+    nombre varchar(20) NOT null,
+    nombre1 varchar(20),
+    apellido varchar(20) NOT null,
+    apellido1 varchar(20),
+    genero varchar(10) NOT null,
+    direccion varchar(50) NOT null,
+    telefono int(15),
+    correo varchar(50) NOT null,
+    profesion varchar(40),
+    rol varchar(15) NOT null,
+    cargo varchar(20) NOT null,
+    contrasena varchar(40) NOT null,
+    estado int(1)
+)
+
+CREATE TABLE genero(
+    idGenero int(2) AUTO_INCREMENT PRIMARY KEY,
+    genero varchar(10) NOT null
+    )
+
+CREATE TABLE tipdocument(
+    idTipDocument int(2) AUTO_INCREMENT PRIMARY KEY,
+    tipdocument varchar(20) NOT null
+    )
+
+CREATE TABLE cargo(
+    idcargo int(2) AUTO_INCREMENT PRIMARY KEY,
+    cargo varchar(20) NOT null
+    )
+
+CREATE TABLE profesion(
+    idprofesion int(2) AUTO_INCREMENT PRIMARY KEY,
+    profesion varchar(50) NOT null
+    )
+
+CREATE TABLE rol( 
+    idrol int(2) AUTO_INCREMENT PRIMARY KEY,
+    rol varchar(20) NOT null
+    )
